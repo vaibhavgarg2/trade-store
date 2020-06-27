@@ -8,7 +8,9 @@ import java.util.Objects;
 @Embeddable
 public class TradeId implements Serializable {
 
-    @Column(name = "TRADE_ID")
+	private static final long serialVersionUID = 1006020515235151515L;
+
+	@Column(name = "TRADE_ID")
     private String id;
 
     @Column(name = "VERSION")

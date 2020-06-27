@@ -1,16 +1,20 @@
 package com.deutsche.TradeStore.entity;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-
-import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Table
 @Entity
 public class Trade implements Serializable {
-    @EmbeddedId
+
+	private static final long serialVersionUID = -4779535104594588025L;
+
+	@EmbeddedId
     private TradeId tradeId;
 
     @Column(name = "COUNTER_PARTY")

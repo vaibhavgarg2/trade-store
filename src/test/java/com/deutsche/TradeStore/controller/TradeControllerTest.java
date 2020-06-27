@@ -69,7 +69,6 @@ public class TradeControllerTest {
     }
 
     @Test
-    @Ignore
     public void testAddTradeSuccess() throws Exception{
         String maturityDate = LocalDate.now().toString();
         String tradeStr = "{\"tradeId\":{\"id\":\"T1\",\"version\":\"2\"},\"counterPartyId\":\"CP01\",\"bookId\":\"book1\",\"maturityDate\":\""+
